@@ -50,6 +50,8 @@ This is a reports structure I added, It's optional but you can generate a report
 - [ ] Run the following script in the terminal `npm run clean:report`
 - [ ] Run the follwing script in the terminal `npx cypress run` 
 - [ ] Run the following script in the terminal `npm run generate:report`
+- [ ] The path to the report should be displayed on the terminal
+- [ ] Copy the link and open it  in your browser to see the report
 
 ### Libraries and Framework
 
