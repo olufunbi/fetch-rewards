@@ -1,0 +1,30 @@
+{
+  "scripts": {
+    "clean:report": "node clean-up.js",
+    "generate:report": "node report.js"
+  },
+  "devDependencies": {
+    "cypress": "^13.13.2",
+    "cypress-fill-command": "^1.0.2",
+    "multiple-cucumber-html-reporter": "^1.19.0",
+    "rimraf": "^3.0.2",
+    "ls": "^0.2.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "integrationFolder": "cypress/e2e",
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/support",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "./reports/e2e/",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "dependencies": {
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-real-events": "^1.13.0",
+    "cypress-wait-until": "^3.0.2",
+    "cypress-xpath": "^2.0.1"
+  }
+}
