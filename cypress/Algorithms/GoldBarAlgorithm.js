@@ -72,6 +72,7 @@ class GoldBarAlgorithm {
 
   // Retrieve the Bar Button selector
   getBarButton(barNumber) {
+           cy.log('The fake gold bar is '+ {barNumber}.barNumber)
     return cy.xpath(this.selectors.bar_button(barNumber));
   }
 
